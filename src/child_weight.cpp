@@ -154,24 +154,24 @@ NumericVector Child::Delta(NumericVector t){
 
 NumericVector Child::FFMReference(NumericVector t){ 
   /*  return ffm_beta0 + ffm_beta1*t; */
-   NumericMatrix ffm_ref(17,nind);
+  NumericMatrix ffm_ref(17,nind);
     ffm_ref(0,_)   = 10.134*(1-sex)+9.477*sex;
     ffm_ref(1,_)   = 12.099*(1 - sex) + 11.494*sex;
     ffm_ref(2,_)   = 14.0*(1 - sex) + 13.2*sex;
-    ffm_ref(3,_)   = 13.54*(1 - sex) + 12.45*sex;
-    ffm_ref(4,_)   = 15.68*(1 - sex) + 12.69*sex;
-    ffm_ref(5,_)   = 18.85*(1 - sex) + 14.42*sex;
-    ffm_ref(6,_)   = 19.08*(1 - sex) + 15.98*sex;
-    ffm_ref(7,_)   = 20.23*(1 - sex) + 19.52*sex;
-    ffm_ref(8,_)   = 20.37*(1 - sex) + 20.12*sex;
-    ffm_ref(9,_)   = 21.89*(1 - sex) + 25.15*sex;
-    ffm_ref(10,_)  = 25.60*(1 - sex) + 26.63*sex;
-    ffm_ref(11,_)  = 30.52*(1 - sex) + 26.47*sex;
-    ffm_ref(12,_)  = 31.05*(1 - sex) + 29.63*sex;
-    ffm_ref(13,_)  = 36.28*(1 - sex) + 37.05*sex;
-    ffm_ref(14,_)  = 41.04*(1 - sex) + 34.60*sex;
-    ffm_ref(15,_)  = 44.75*(1 - sex) + 36.61*sex;
-    ffm_ref(16,_)  = 41.59*(1 - sex) + 36.38*sex;
+    ffm_ref(3,_)   = 15.72*(1 - sex) + 14.86*sex;  
+    ffm_ref(4,_)   = 14.44*(1 - sex) + 14.61*sex;  
+    ffm_ref(5,_)   = 18.82*(1 - sex) + 16.14*sex;
+    ffm_ref(6,_)   = 17.04*(1 - sex) + 18.20*sex;
+    ffm_ref(7,_)   = 19.54*(1 - sex) + 16.31*sex;
+    ffm_ref(8,_)   = 23.89*(1 - sex) + 23.89*sex;
+    ffm_ref(9,_)   = 23.74*(1 - sex) + 21.20*sex;
+    ffm_ref(10,_)  = 28.13*(1 - sex) + 25.51*sex;
+    ffm_ref(11,_)  = 32.61*(1 - sex) + 28.45*sex;
+    ffm_ref(12,_)  = 35.03*(1 - sex) + 37.22*sex;
+    ffm_ref(13,_)  = 30.64*(1 - sex) + 32.87*sex;
+    ffm_ref(14,_)  = 41.54*(1 - sex) + 31.66*sex;
+    ffm_ref(15,_)  = 41.89*(1 - sex) + 34.08*sex;
+    ffm_ref(16,_)  = 52.17*(1 - sex) + 42.96*sex;  
  
  NumericVector ffm_ref_t(nind);
  int jmin;
@@ -194,24 +194,24 @@ NumericVector Child::FFMReference(NumericVector t){
 
 NumericVector Child::FMReference(NumericVector t){
    /* return fm_beta0 + fm_beta1*t;*/
-    NumericMatrix fm_ref(17,nind);
+   NumericMatrix fm_ref(17,nind);
     fm_ref(0,_)   = 2.456*(1-sex)+ 2.433*sex;
     fm_ref(1,_)   = 2.576*(1 - sex) + 2.606*sex;
     fm_ref(2,_)   = 2.7*(1 - sex) + 2.8*sex;
-    fm_ref(3,_)   = 2.05*(1 - sex) + 2.33*sex;
-    fm_ref(4,_)   = 2.13*(1 - sex) + 2.33*sex;
-    fm_ref(5,_)   = 2.36*(1 - sex) + 2.38*sex;
-    fm_ref(6,_)   = 2.49*(1 - sex) + 2.61*sex;
-    fm_ref(7,_)   = 2.49*(1 - sex) + 3.36*sex;
-    fm_ref(8,_)   = 2.58*(1 - sex) + 3.28*sex;
-    fm_ref(9,_)   = 2.90*(1 - sex) + 4.16*sex;
-    fm_ref(10,_)  = 2.80*(1 - sex) + 4.45*sex;
-    fm_ref(11,_)  = 3.65*(1 - sex) + 3.63*sex;
-    fm_ref(12,_)  = 3.09*(1 - sex) + 5.11*sex;
-    fm_ref(13,_)  = 4.33*(1 - sex) + 5.79*sex;
-    fm_ref(14,_)  = 4.86*(1 - sex) + 5.32*sex;
-    fm_ref(15,_)  = 5.29*(1 - sex) + 5.68*sex;
-    fm_ref(16,_)  = 4.65*(1 - sex) + 6.74*sex;
+    fm_ref(3,_)   = 3.66*(1 - sex) + 4.47*sex;
+    fm_ref(4,_)   = 2.06*(1 - sex) + 2.79*sex;    
+    fm_ref(5,_)   = 2.73*(1 - sex) + 2.93*sex;   
+    fm_ref(6,_)   = 2.18*(1 - sex) + 3.00*sex;
+    fm_ref(7,_)   = 2.34*(1 - sex) + 2.79*sex;    
+    fm_ref(8,_)   = 3.01*(1 - sex) + 4.01*sex;
+    fm_ref(9,_)   = 2.76*(1 - sex) + 3.57*sex;  
+    fm_ref(10,_)  = 3.17*(1 - sex) + 4.21*sex;
+    fm_ref(11,_)  = 3.64*(1 - sex) + 4.38*sex; 
+    fm_ref(12,_)  = 3.77*(1 - sex) + 5.88*sex;
+    fm_ref(13,_)  = 3.66*(1 - sex) + 5.03*sex; 
+    fm_ref(14,_)  = 5.16*(1 - sex) + 4.76*sex;
+    fm_ref(15,_)  = 4.94*(1 - sex) + 5.42*sex; 
+    fm_ref(16,_)  = 13.35*(1 - sex) + 15.89*sex;
  NumericVector fm_ref_t(nind);
  int jmin;
  int jmax;
